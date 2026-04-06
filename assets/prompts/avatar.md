@@ -1,200 +1,385 @@
-# Player Avatar — AI Art Generation Prompts
+# Player Characters — AI Art Generation Prompts (Animal Edition)
 
-> **Style Guide**: All assets must follow a consistent style: 2D cartoon, clean black outlines, flat color with subtle cel-shading, rounded/soft shapes, chibi proportions (large head, small body). Bright saturated colors. Transparent PNG, 512x512px canvas.
+> **Style Guide**: 2D cartoon, clean black outlines, flat color with subtle cel-shading, rounded/soft shapes. Bright saturated colors. Chibi animal proportions (large head, small body, standing upright). Transparent PNG, 512x512px canvas.
 
----
-
-## Body Base
-
-Each body base is a simple kid character silhouette with no hair, no clothing details — just skin tone and basic body shape. Arms at sides, facing forward (3/4 view).
-
-### Size: Small (Ages 5-6, Grades K-1)
-
-| # | Prompt |
-|---|---|
-| 1 | `2D cartoon chibi child character base, age 5-6, small build, light skin tone (#FDDBB4), no hair, simple white undergarment, standing forward 3/4 view, arms slightly out, big head small body proportions, clean black outlines, flat color cel-shading, transparent background, 512x512px` |
-| 2 | Same prompt, skin tone: light-medium (#F1C27D) |
-| 3 | Same prompt, skin tone: medium (#E0AC69) |
-| 4 | Same prompt, skin tone: medium-dark (#C68642) |
-| 5 | Same prompt, skin tone: dark (#8D5524) |
-| 6 | Same prompt, skin tone: deep dark (#5C3A1E) |
-
-### Size: Medium (Ages 7-8, Grades 2-3)
-
-| # | Prompt |
-|---|---|
-| 7-12 | Same 6 prompts as above, but: `age 7-8, medium build, slightly taller proportions` |
-
-### Size: Large (Ages 9-11, Grades 4-5)
-
-| # | Prompt |
-|---|---|
-| 13-18 | Same 6 prompts as above, but: `age 9-10, taller build, slightly less chibi proportions but still cartoon` |
-
-**Total body bases: 18**
+> **Note**: Kenney Animal Pack Redux provides portrait/face icons for all these animals. These prompts are for generating **full-body sprites** for in-game use. Use Kenney portraits for dialogue boxes and character selection UI.
 
 ---
 
-## Hair — Back Layer
+## Overview
 
-Hair that appears behind the head/body. Each style in each color.
-
-### Style Descriptions
-
-| Style | Description for prompt |
-|---|---|
-| Short Straight | `short straight hair, neat, ear-length` |
-| Short Curly | `short curly hair, bouncy curls, ear-length` |
-| Long Straight | `long straight hair, shoulder-length, flowing` |
-| Long Curly | `long curly hair, shoulder-length, voluminous curls` |
-| Braids | `two long braids, hanging past shoulders` |
-| Afro | `round afro hairstyle, full and voluminous` |
-| Ponytail | `high ponytail, hair pulled back, ponytail hanging behind` |
-| Buzz Cut | `very short buzz cut hair, close to head` |
-
-### Colors
-
-| Color | Hex |
-|---|---|
-| Black | #1A1A2E |
-| Brown | #6B4226 |
-| Blonde | #F5D061 |
-| Red | #C0392B |
-| Dark Brown | #3E2723 |
-| Fun Purple (unlockable) | #9B59B6 |
-
-### Prompt Template
-
-```
-2D cartoon chibi character hair, back layer only, [STYLE DESCRIPTION], [COLOR NAME] color ([HEX]),
-isolated hair piece on transparent background, clean black outlines, flat color with subtle shading,
-designed to layer behind a chibi character head, 512x512px
-```
-
-**Total hair back pieces: 8 styles x 6 colors = 48**
+8 starter characters available at profile creation. 4 unlockable characters earned through gameplay. Each needs 4 poses.
 
 ---
 
-## Hair — Front Layer
+## STARTER CHARACTERS
 
-Bangs and front-facing hair pieces that layer on top of the face.
+### 1. Fox — "The Clever One"
 
-### Prompt Template
+**Personality**: Quick-witted, curious, always finds a shortcut
+**Colors**: Orange and white, amber eyes
 
+#### Idle
 ```
-2D cartoon chibi character hair, front bangs/fringe only, matching [STYLE DESCRIPTION], [COLOR NAME]
-color ([HEX]), isolated hair piece on transparent background, clean black outlines, flat color with
-subtle shading, designed to layer over a chibi character forehead, 512x512px
+2D cartoon anthropomorphic fox character, standing upright, chibi proportions, large head small body,
+orange fur with white chest and muzzle, big amber eyes, bushy tail with white tip, wearing a small
+green bandana around neck, relaxed confident pose, slight smirk, clean black outlines, flat color
+with subtle cel-shading, kid-friendly cute style, transparent background, 512x512px
 ```
 
-**Total hair front pieces: 8 styles x 6 colors = 48**
+#### Happy
+```
+2D cartoon anthropomorphic fox character, standing upright, chibi proportions, orange fur with white
+chest and muzzle, big amber eyes squeezed with joy, huge smile, bushy tail wagging, wearing green
+bandana, jumping slightly with one paw raised in celebration, clean black outlines, flat color with
+subtle cel-shading, transparent background, 512x512px
+```
+
+#### Thinking
+```
+2D cartoon anthropomorphic fox character, standing upright, chibi proportions, orange fur with white
+chest and muzzle, big amber eyes looking up and to the side, one paw on chin thoughtfully, bushy
+tail curled, wearing green bandana, curious thinking expression, clean black outlines, flat color
+with subtle cel-shading, transparent background, 512x512px
+```
+
+#### Celebrating
+```
+2D cartoon anthropomorphic fox character, standing upright, chibi proportions, orange fur with white
+chest and muzzle, big amber eyes shining with excitement, both paws raised high in victory, bushy
+tail straight up with sparkles, wearing green bandana, ecstatic triumphant pose, clean black
+outlines, flat color with subtle cel-shading, transparent background, 512x512px
+```
 
 ---
 
-## Faces / Expressions
+### 2. Bear Cub — "The Strong One"
 
-Faces include eyes and mouth as one combined piece. Each eye shape has 4 expression variants.
+**Personality**: Gentle, strong, protective, gives great hugs
+**Colors**: Warm brown, dark brown eyes
 
-### Eye Shapes
-
-| Shape | Description |
-|---|---|
-| Round | `large round eyes, wide and bright` |
-| Almond | `almond-shaped eyes, slightly angled` |
-| Wide | `extra wide open eyes, expressive and big` |
-| Narrow | `narrow friendly eyes, slightly squinted, cheerful` |
-
-### Expressions
-
-| Expression | Eyes + Mouth Description |
-|---|---|
-| Happy | `happy expression, eyes bright with joy, wide smile, cheerful` |
-| Thinking | `thinking expression, eyes looking up and to the side, slight pout, curious` |
-| Celebrating | `celebrating expression, eyes squeezed with excitement, huge open smile, ecstatic` |
-| Surprised | `surprised expression, eyes wide open, small round open mouth, amazed` |
-
-### Prompt Template
-
+#### Idle
 ```
-2D cartoon chibi character face, [EYE SHAPE DESCRIPTION], [EXPRESSION DESCRIPTION],
-isolated face on transparent background, no hair, no head outline, just eyes eyebrows and mouth,
-clean black outlines, flat color, expressive and readable, designed for a chibi character, 512x512px
+2D cartoon anthropomorphic bear cub character, standing upright, chibi proportions, large head,
+warm brown fur, round ears, big dark brown eyes, friendly smile, wearing a small red scarf,
+sturdy relaxed pose with arms at sides, clean black outlines, flat color with subtle cel-shading,
+kid-friendly cute style, transparent background, 512x512px
 ```
 
-**Total face pieces: 4 eye shapes x 4 expressions = 16**
+#### Happy
+```
+2D cartoon anthropomorphic bear cub, chibi proportions, warm brown fur, round ears, big dark brown
+eyes closed with joy, huge open smile, wearing red scarf, arms spread wide for a hug, bouncing
+happily, clean black outlines, flat color with subtle cel-shading, transparent background, 512x512px
+```
+
+#### Thinking
+```
+2D cartoon anthropomorphic bear cub, chibi proportions, warm brown fur, round ears, big dark brown
+eyes looking upward, one paw scratching head, puzzled but determined expression, wearing red scarf,
+clean black outlines, flat color with subtle cel-shading, transparent background, 512x512px
+```
+
+#### Celebrating
+```
+2D cartoon anthropomorphic bear cub, chibi proportions, warm brown fur, round ears, big dark brown
+eyes bright with pride, fists pumping in the air, standing tall and proud, wearing red scarf
+fluttering, big toothy grin, clean black outlines, flat color with subtle cel-shading, transparent
+background, 512x512px
+```
 
 ---
 
-## Clothing — Base Outfits
+### 3. Owl — "The Wise One"
 
-### Outfit Styles
+**Personality**: Thoughtful, observant, stays up late studying
+**Colors**: Blue-grey and white, big golden eyes
 
-| Style | Description |
-|---|---|
-| T-shirt & Shorts | `casual t-shirt and shorts outfit, comfortable, kid-friendly` |
-| Dress | `simple knee-length dress, playful, kid-friendly` |
-| Hoodie & Pants | `cozy hoodie and pants outfit, relaxed, kid-friendly` |
-
-### Colors Per Outfit
-
-| Color | Hex |
-|---|---|
-| Blue | #3498DB |
-| Red | #E74C3C |
-| Green | #2ECC71 |
-| Yellow | #F1C40F |
-
-### Prompt Template
-
+#### Idle
 ```
-2D cartoon chibi character clothing, [STYLE DESCRIPTION], [COLOR NAME] color ([HEX]),
-isolated clothing piece on transparent background, designed to layer over a chibi body base,
-clean black outlines, flat color with subtle shading, kid-friendly design, 512x512px
+2D cartoon anthropomorphic owl character, standing upright, chibi proportions, blue-grey feathers
+with white chest, large round golden eyes, small beak, tiny ear tufts, wearing a small purple
+bow tie, calm composed pose with wings folded at sides, clean black outlines, flat color with
+subtle cel-shading, kid-friendly cute style, transparent background, 512x512px
 ```
 
-**Total base outfits: 3 styles x 4 colors = 12**
+#### Happy
+```
+2D cartoon anthropomorphic owl, chibi proportions, blue-grey feathers with white chest, large
+golden eyes half-closed with contentment, happy beak smile, wearing purple bow tie, wings slightly
+spread with feathers ruffled in delight, clean black outlines, flat color with subtle cel-shading,
+transparent background, 512x512px
+```
+
+#### Thinking
+```
+2D cartoon anthropomorphic owl, chibi proportions, blue-grey feathers with white chest, large
+golden eyes wide and intense, one wing raised to chin in deep thought, wearing purple bow tie,
+head slightly tilted, scholarly expression, clean black outlines, flat color with subtle cel-shading,
+transparent background, 512x512px
+```
+
+#### Celebrating
+```
+2D cartoon anthropomorphic owl, chibi proportions, blue-grey feathers with white chest, large
+golden eyes sparkling, wings spread wide triumphantly, wearing purple bow tie, feathers puffed up
+with pride, doing a little spin, clean black outlines, flat color with subtle cel-shading,
+transparent background, 512x512px
+```
 
 ---
 
-## Unlockable Accessories
+### 4. Bunny — "The Fast One"
 
-These are reward items earned through gameplay.
+**Personality**: Energetic, bouncy, always in a hurry, loves racing
+**Colors**: Pink and white, bright pink eyes
 
-| # | Item | Prompt |
-|---|---|---|
-| 1 | Explorer Cape | `2D cartoon explorer cape, flowing red fabric, gold clasp, designed for chibi character, isolated on transparent background, clean outlines, 512x512px` |
-| 2 | Builder Hard Hat | `2D cartoon yellow construction hard hat, kid-sized, designed for chibi character head, isolated on transparent background, clean outlines, 512x512px` |
-| 3 | Captain's Hat | `2D cartoon navy blue captain's hat with gold anchor emblem, kid-sized, designed for chibi character head, isolated on transparent background, clean outlines, 512x512px` |
-| 4 | Baker's Apron | `2D cartoon white baker's apron with flour dust, cute design, for chibi character, isolated on transparent background, clean outlines, 512x512px` |
-| 5 | Scholar's Cap | `2D cartoon blue graduation cap with gold tassel, kid-sized, for chibi character head, isolated on transparent background, clean outlines, 512x512px` |
-| 6 | Festival Crown | `2D cartoon colorful flower crown with ribbons, festive, for chibi character head, isolated on transparent background, clean outlines, 512x512px` |
-| 7 | Superhero Mask | `2D cartoon bright red superhero eye mask, kid-friendly, for chibi character face, isolated on transparent background, clean outlines, 512x512px` |
-| 8 | Astronaut Helmet | `2D cartoon round astronaut helmet, clear visor, white with blue accents, for chibi character head, isolated on transparent background, clean outlines, 512x512px` |
-| 9 | Crown | `2D cartoon shiny gold royal crown with colorful gems, kid-sized, for chibi character head, isolated on transparent background, clean outlines, 512x512px` |
-| 10 | Glasses (regular) | `2D cartoon round eyeglasses, thin frames, kid-sized, for chibi character face, isolated on transparent background, clean outlines, 512x512px` |
+#### Idle
+```
+2D cartoon anthropomorphic bunny character, standing upright, chibi proportions, soft pink fur with
+white belly, long floppy ears, big bright pink eyes, cute little nose, wearing yellow wristbands,
+bouncy ready-to-go pose, standing on tiptoes, clean black outlines, flat color with subtle
+cel-shading, kid-friendly cute style, transparent background, 512x512px
+```
 
-**Total accessories: 10**
+#### Happy
+```
+2D cartoon anthropomorphic bunny, chibi proportions, soft pink fur with white belly, long floppy
+ears perked up, big bright pink eyes sparkling, huge joyful smile, wearing yellow wristbands,
+mid-hop in the air with legs kicked back, ears flying up, clean black outlines, flat color with
+subtle cel-shading, transparent background, 512x512px
+```
+
+#### Thinking
+```
+2D cartoon anthropomorphic bunny, chibi proportions, soft pink fur with white belly, long ears
+flopped to one side, big bright pink eyes looking sideways curiously, one paw tapping chin, wearing
+yellow wristbands, head tilted, clean black outlines, flat color with subtle cel-shading,
+transparent background, 512x512px
+```
+
+#### Celebrating
+```
+2D cartoon anthropomorphic bunny, chibi proportions, soft pink fur with white belly, long ears
+straight up with excitement, big bright pink eyes squeezed shut, jumping high in the air with paws
+raised, wearing yellow wristbands, pure joy and energy, clean black outlines, flat color with
+subtle cel-shading, transparent background, 512x512px
+```
+
+---
+
+### 5. Cat — "The Curious One"
+
+**Personality**: Sneaky, clever, always exploring, finds hidden things
+**Colors**: Black with gold eyes, white paws
+
+#### Idle
+```
+2D cartoon anthropomorphic cat character, standing upright, chibi proportions, sleek black fur with
+white paws and white chest patch, big golden eyes, pointy ears, long tail swishing, wearing a
+small blue collar with a bell, cool relaxed pose, slight mysterious smile, clean black outlines,
+flat color with subtle cel-shading, kid-friendly cute style, transparent background, 512x512px
+```
+
+#### Happy
+```
+2D cartoon anthropomorphic cat, chibi proportions, sleek black fur with white paws and chest, big
+golden eyes bright and sparkling, wide smile showing tiny teeth, wearing blue collar with bell,
+tail curled up in a happy spiral, paws together delighted, clean black outlines, flat color with
+subtle cel-shading, transparent background, 512x512px
+```
+
+#### Thinking
+```
+2D cartoon anthropomorphic cat, chibi proportions, sleek black fur with white paws and chest, big
+golden eyes narrowed with focus, one ear rotated sideways, wearing blue collar with bell, tail
+swishing slowly, one paw raised mid-thought, detective pose, clean black outlines, flat color with
+subtle cel-shading, transparent background, 512x512px
+```
+
+#### Celebrating
+```
+2D cartoon anthropomorphic cat, chibi proportions, sleek black fur with white paws and chest, big
+golden eyes wide with excitement, ears perked forward, wearing blue collar with bell jingling, tail
+straight up, doing a confident fist pump with one paw, smug proud expression, clean black outlines,
+flat color with subtle cel-shading, transparent background, 512x512px
+```
+
+---
+
+### 6. Puppy — "The Loyal One"
+
+**Personality**: Friendly, enthusiastic, loves everyone, always happy to help
+**Colors**: Golden retriever coloring, big brown eyes
+
+#### Idle
+```
+2D cartoon anthropomorphic golden puppy character, standing upright, chibi proportions, fluffy
+golden fur, big warm brown eyes, floppy ears, pink tongue slightly out, wagging tail, wearing an
+orange bandana, eager happy stance, clean black outlines, flat color with subtle cel-shading,
+kid-friendly cute style, transparent background, 512x512px
+```
+
+#### Happy
+```
+2D cartoon anthropomorphic golden puppy, chibi proportions, fluffy golden fur, big warm brown eyes
+shining with pure joy, tongue out panting happily, floppy ears bouncing, wearing orange bandana,
+tail wagging furiously as a blur, jumping excitedly, clean black outlines, flat color with subtle
+cel-shading, transparent background, 512x512px
+```
+
+#### Thinking
+```
+2D cartoon anthropomorphic golden puppy, chibi proportions, fluffy golden fur, big warm brown eyes
+looking upward, head tilted to one side curiously, one ear up one ear down, wearing orange bandana,
+paw raised slightly, adorable confused expression, clean black outlines, flat color with subtle
+cel-shading, transparent background, 512x512px
+```
+
+#### Celebrating
+```
+2D cartoon anthropomorphic golden puppy, chibi proportions, fluffy golden fur, big warm brown eyes
+squeezed with excitement, huge open mouth smile, floppy ears flying up, wearing orange bandana,
+spinning in a happy circle, tail going wild, maximum enthusiasm, clean black outlines, flat color
+with subtle cel-shading, transparent background, 512x512px
+```
+
+---
+
+### 7. Frog — "The Goofy One"
+
+**Personality**: Silly, bouncy, makes everyone laugh, loves jumping
+**Colors**: Bright green with yellow belly, big round eyes
+
+#### Idle
+```
+2D cartoon anthropomorphic frog character, standing upright, chibi proportions, bright green skin
+with yellow belly, very large round eyes with big pupils, wide mouth in a goofy grin, wearing a
+small backwards baseball cap (red), hands on hips, relaxed silly pose, clean black outlines, flat
+color with subtle cel-shading, kid-friendly cute style, transparent background, 512x512px
+```
+
+#### Happy
+```
+2D cartoon anthropomorphic frog, chibi proportions, bright green skin with yellow belly, very large
+round eyes sparkling, enormous smile stretching across face, wearing red backwards cap, doing a
+silly dance with arms waving, tongue sticking out playfully, clean black outlines, flat color with
+subtle cel-shading, transparent background, 512x512px
+```
+
+#### Thinking
+```
+2D cartoon anthropomorphic frog, chibi proportions, bright green skin with yellow belly, very large
+round eyes crossed slightly with effort, tongue poking out one side, wearing red backwards cap
+tilted, one finger tapping head, comically over-thinking, clean black outlines, flat color with
+subtle cel-shading, transparent background, 512x512px
+```
+
+#### Celebrating
+```
+2D cartoon anthropomorphic frog, chibi proportions, bright green skin with yellow belly, very large
+round eyes bugging out with excitement, mouth wide open cheering, wearing red backwards cap flying
+off slightly, doing a huge leap in the air, arms and legs spread like a star, clean black outlines,
+flat color with subtle cel-shading, transparent background, 512x512px
+```
+
+---
+
+### 8. Penguin — "The Cool One"
+
+**Personality**: Chill, calm, cool under pressure, nothing fazes them
+**Colors**: Classic black and white, cool blue eyes
+
+#### Idle
+```
+2D cartoon anthropomorphic penguin character, standing upright, chibi proportions, classic black
+and white coloring, round body, small flippers, cool blue eyes, calm slight smile, wearing tiny
+sunglasses pushed up on forehead, relaxed effortlessly cool pose, clean black outlines, flat color
+with subtle cel-shading, kid-friendly cute style, transparent background, 512x512px
+```
+
+#### Happy
+```
+2D cartoon anthropomorphic penguin, chibi proportions, black and white coloring, cool blue eyes
+showing warmth, rare genuine smile breaking through the cool demeanor, wearing sunglasses on
+forehead, flippers clapping together, subtle happy waddle, clean black outlines, flat color with
+subtle cel-shading, transparent background, 512x512px
+```
+
+#### Thinking
+```
+2D cartoon anthropomorphic penguin, chibi proportions, black and white coloring, cool blue eyes
+behind sunglasses now pulled down, one flipper adjusting glasses thoughtfully, calm analytical
+expression, clean black outlines, flat color with subtle cel-shading, transparent background,
+512x512px
+```
+
+#### Celebrating
+```
+2D cartoon anthropomorphic penguin, chibi proportions, black and white coloring, cool blue eyes
+wide with rare excitement, sunglasses flying off, flippers in the air, doing a penguin slide on
+belly with sparkles, breaking character from being cool, clean black outlines, flat color with
+subtle cel-shading, transparent background, 512x512px
+```
+
+---
+
+## UNLOCKABLE CHARACTERS
+
+### 9. Dragon — Unlocked by completing The Farm zone
+
+```
+Prompt template same as above. Cute baby dragon, purple scales with lighter purple belly, small
+wings, tiny horns, green eyes, puffs of harmless smoke from nostrils when excited. Wearing a
+tiny crown. 4 poses: idle, happy, thinking, celebrating.
+```
+
+### 10. Unicorn — Unlocked by completing The Bakery zone
+
+```
+Cute baby unicorn, white fur with rainbow mane and tail, sparkling horn, large violet eyes, rosy
+cheeks. Wearing a flower necklace. 4 poses: idle, happy, thinking, celebrating.
+```
+
+### 11. Phoenix — Unlocked by completing The Construction zone
+
+```
+Cute baby phoenix, warm red-orange-gold feathers, glowing gently, big amber eyes, small flame-like
+tail feathers (cute not scary). Wearing a tiny golden anklet. 4 poses: idle, happy, thinking,
+celebrating.
+```
+
+### 12. Kraken — Unlocked by completing The Harbor zone
+
+```
+Cute baby kraken/octopus, teal-blue body, 8 small tentacles, big round turquoise eyes, friendly
+not scary, bubbly personality. Wearing a tiny sailor hat. 4 poses: idle, happy, thinking,
+celebrating.
+```
 
 ---
 
 ## File Naming Convention
 
 ```
-avatar_body_[size]_[skintone].png
-avatar_hair_back_[style]_[color].png
-avatar_hair_front_[style]_[color].png
-avatar_face_[eyeshape]_[expression].png
-avatar_outfit_[style]_[color].png
-avatar_accessory_[item].png
+char_fox_idle.png
+char_fox_happy.png
+char_fox_thinking.png
+char_fox_celebrating.png
+char_bear_idle.png
+... (same pattern for all characters)
+char_dragon_idle.png
+char_unicorn_idle.png
+char_phoenix_idle.png
+char_kraken_idle.png
 ```
-
-Examples:
-- `avatar_body_small_light.png`
-- `avatar_hair_back_braids_black.png`
-- `avatar_face_round_happy.png`
-- `avatar_outfit_dress_blue.png`
-- `avatar_accessory_explorer_cape.png`
 
 ---
 
-## Total Avatar Assets: ~152 pieces
+## Total Player Character Assets
+
+| Category | Count |
+|---|---|
+| Starter characters (8 x 4 poses) | 32 |
+| Unlockable characters (4 x 4 poses) | 16 |
+| **Total** | **48** |
