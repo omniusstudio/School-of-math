@@ -1,0 +1,18 @@
+{
+  "name": "countopia",
+  "version": "0.1.0",
+  "description": "Countopia — A math learning adventure game for kids",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "phaser": "^3.90.0"
+  },
+  "devDependencies": {
+    "typescript": "^6.0.2",
+    "vite": "^8.0.5"
+  }
+}
