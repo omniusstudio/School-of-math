@@ -4,7 +4,11 @@ import { TitleScene } from '../scenes/TitleScene';
 import { ProfileScene } from '../scenes/ProfileScene';
 import { CreateProfileScene } from '../scenes/CreateProfileScene';
 import { VillageScene } from '../scenes/VillageScene';
+import { DistrictScene } from '../scenes/DistrictScene';
+import { ShopScene } from '../scenes/ShopScene';
 import { CrateStackerScene } from '../games/farm/CrateStacker';
+import { EggCollectorScene } from '../games/farm/EggCollector';
+import { HarvestRowsScene } from '../games/farm/HarvestRows';
 
 export const GAME_WIDTH = 1280;
 export const GAME_HEIGHT = 720;
@@ -31,7 +35,11 @@ export const gameConfig: Phaser.Types.Core.GameConfig = {
     ProfileScene,
     CreateProfileScene,
     VillageScene,
+    DistrictScene,
+    ShopScene,
     CrateStackerScene,
+    EggCollectorScene,
+    HarvestRowsScene,
   ],
   backgroundColor: '#87CEEB',
   pixelArt: false,

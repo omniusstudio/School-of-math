@@ -44,6 +44,25 @@ export class VillageScene extends Phaser.Scene {
     this.hud.update(this.profile);
     this.hud.setScrollFactor(0, 0);
 
+    // Shop button
+    const shopBtn = this.add.graphics();
+    shopBtn.fillStyle(0xf39c12, 1);
+    shopBtn.fillRoundedRect(GAME_WIDTH - 160, GAME_HEIGHT - 60, 140, 40, 8);
+    shopBtn.lineStyle(2, 0xf1c40f, 1);
+    shopBtn.strokeRoundedRect(GAME_WIDTH - 160, GAME_HEIGHT - 60, 140, 40, 8);
+
+    this.add.text(GAME_WIDTH - 90, GAME_HEIGHT - 40, '🏪 Shop', {
+      fontFamily: 'Arial Black, Arial, sans-serif',
+      fontSize: '18px',
+      color: '#ffffff',
+    }).setOrigin(0.5);
+
+    const shopHit = this.add.rectangle(GAME_WIDTH - 90, GAME_HEIGHT - 40, 140, 40).setInteractive().setAlpha(0.001);
+    shopHit.on('pointerup', () => {
+      this.cameras.main.fadeOut(300);
+      this.time.delayedCall(300, () => this.scene.start('ShopScene'));
+    });
+
     // Welcome message for new players
     if (this.profile.stats.sessionsPlayed === 0) {
       this.showWelcomeMessage();
@@ -281,15 +300,17 @@ export class VillageScene extends Phaser.Scene {
   }
 
   private enterDistrict(districtId: string): void {
-    if (districtId === 'farm') {
-      // For now, go directly to Crate Stacker
+    const district = DISTRICTS[districtId];
+    if (!district) return;
+
+    // Districts with mini-games go to DistrictScene
+    if (district.miniGames.length > 0) {
       this.cameras.main.fadeOut(400);
       this.time.delayedCall(400, () => {
-        this.scene.start('CrateStackerScene');
+        this.scene.start('DistrictScene', { districtId });
       });
     } else {
-      // Show "coming soon" for other districts
-      this.showMessage(`${DISTRICTS[districtId].name} is coming soon!`);
+      this.showMessage(`${district.name} is coming soon!`);
     }
   }
 
