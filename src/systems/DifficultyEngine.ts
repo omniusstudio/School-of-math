@@ -49,10 +49,17 @@ export const DIFFICULTY_CONFIGS: Record<string, DifficultyLevel[]> = {
   farm: FARM_DIFFICULTY,
   bakery: BAKERY_DIFFICULTY,
   market: MARKET_DIFFICULTY,
-  construction: FARM_DIFFICULTY, // placeholder, same shape
+  construction: FARM_DIFFICULTY,
   festival: FARM_DIFFICULTY,
   harbor: FARM_DIFFICULTY,
   bank: MARKET_DIFFICULTY,
+  // Skill-specific fallbacks (used when district doesn't have a config)
+  'subtraction-money': MARKET_DIFFICULTY,
+  'addition-budget': MARKET_DIFFICULTY,
+  'multiplication-equiv': BAKERY_DIFFICULTY,
+  'arrays-multiplication': BAKERY_DIFFICULTY,
+  'addition-measurement': FARM_DIFFICULTY,
+  'fractions-equal': BAKERY_DIFFICULTY,
 };
 
 // Grade to starting stage mapping

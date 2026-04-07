@@ -63,6 +63,62 @@ export class VillageScene extends Phaser.Scene {
       this.time.delayedCall(300, () => this.scene.start('ShopScene'));
     });
 
+    // Character Shop button
+    const charBtn = this.add.graphics();
+    charBtn.fillStyle(0x9b59b6, 1);
+    charBtn.fillRoundedRect(GAME_WIDTH - 310, GAME_HEIGHT - 60, 140, 40, 8);
+    charBtn.lineStyle(2, 0x8e44ad, 1);
+    charBtn.strokeRoundedRect(GAME_WIDTH - 310, GAME_HEIGHT - 60, 140, 40, 8);
+
+    this.add.text(GAME_WIDTH - 240, GAME_HEIGHT - 40, '🐾 Characters', {
+      fontFamily: 'Arial Black, Arial, sans-serif',
+      fontSize: '14px',
+      color: '#ffffff',
+    }).setOrigin(0.5);
+
+    const charHit = this.add.rectangle(GAME_WIDTH - 240, GAME_HEIGHT - 40, 140, 40).setInteractive().setAlpha(0.001);
+    charHit.on('pointerup', () => {
+      this.cameras.main.fadeOut(300);
+      this.time.delayedCall(300, () => this.scene.start('CharacterShopScene'));
+    });
+
+    // Platformer buttons
+    const platBtnG = this.add.graphics();
+    platBtnG.fillStyle(0x2ecc71, 1);
+    platBtnG.fillRoundedRect(20, GAME_HEIGHT - 60, 140, 40, 8);
+    platBtnG.lineStyle(2, 0x27ae60, 1);
+    platBtnG.strokeRoundedRect(20, GAME_HEIGHT - 60, 140, 40, 8);
+
+    this.add.text(90, GAME_HEIGHT - 40, '🏃 Number Run', {
+      fontFamily: 'Arial Black, Arial, sans-serif',
+      fontSize: '13px',
+      color: '#ffffff',
+    }).setOrigin(0.5);
+
+    const platHit = this.add.rectangle(90, GAME_HEIGHT - 40, 140, 40).setInteractive().setAlpha(0.001);
+    platHit.on('pointerup', () => {
+      this.cameras.main.fadeOut(300);
+      this.time.delayedCall(300, () => this.scene.start('NumberRunScene'));
+    });
+
+    const dashBtnG = this.add.graphics();
+    dashBtnG.fillStyle(0x3498db, 1);
+    dashBtnG.fillRoundedRect(170, GAME_HEIGHT - 60, 140, 40, 8);
+    dashBtnG.lineStyle(2, 0x2980b9, 1);
+    dashBtnG.strokeRoundedRect(170, GAME_HEIGHT - 60, 140, 40, 8);
+
+    this.add.text(240, GAME_HEIGHT - 40, '🪙 Coin Dash', {
+      fontFamily: 'Arial Black, Arial, sans-serif',
+      fontSize: '13px',
+      color: '#ffffff',
+    }).setOrigin(0.5);
+
+    const dashHit = this.add.rectangle(240, GAME_HEIGHT - 40, 140, 40).setInteractive().setAlpha(0.001);
+    dashHit.on('pointerup', () => {
+      this.cameras.main.fadeOut(300);
+      this.time.delayedCall(300, () => this.scene.start('CoinDashScene'));
+    });
+
     // Welcome message for new players
     if (this.profile.stats.sessionsPlayed === 0) {
       this.showWelcomeMessage();

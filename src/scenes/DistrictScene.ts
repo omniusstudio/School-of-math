@@ -54,6 +54,42 @@ const MINI_GAME_INFO: Record<string, { name: string; description: string; scene:
     scene: 'HarvestRowsScene',
     icon: '🌾',
   },
+  'make-change': {
+    name: 'Make Change',
+    description: 'Give customers the right change back!',
+    scene: 'MakeChangeScene',
+    icon: '💰',
+  },
+  'stock-up': {
+    name: 'Stock Up',
+    description: 'Buy items that add up to exactly the budget!',
+    scene: 'StockUpScene',
+    icon: '🛒',
+  },
+  'fair-trade': {
+    name: 'Fair Trade',
+    description: 'Are these trades equal? Compare groups!',
+    scene: 'FairTradeScene',
+    icon: '⚖️',
+  },
+  'order-up': {
+    name: 'Order Up',
+    description: 'Fill the cookie tray with the right array!',
+    scene: 'OrderUpScene',
+    icon: '🍪',
+  },
+  'recipe-mix': {
+    name: 'Recipe Mix',
+    description: 'Add the right scoops to make the recipe!',
+    scene: 'RecipeMixScene',
+    icon: '🥣',
+  },
+  'cookie-cutter': {
+    name: 'Cookie Cutter',
+    description: 'Cut dough into equal fraction pieces!',
+    scene: 'CookieCutterScene',
+    icon: '🔪',
+  },
 };
 
 export class DistrictScene extends Phaser.Scene {

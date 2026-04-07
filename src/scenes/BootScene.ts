@@ -189,6 +189,17 @@ export class BootScene extends Phaser.Scene {
     this.createButtonTexture('btn_red', 0xe74c3c, 0xc0392b, 200, 50);
     this.createButtonTexture('btn_wide', 0x3498db, 0x2980b9, 300, 60);
 
+    // Gem icon
+    const gemG = this.make.graphics({ x: 0, y: 0 });
+    gemG.fillStyle(0x9b59b6, 1);
+    gemG.fillTriangle(16, 2, 4, 14, 28, 14);
+    gemG.fillRect(4, 14, 24, 8);
+    gemG.fillTriangle(4, 22, 16, 30, 28, 22);
+    gemG.lineStyle(2, 0x7d3c98, 1);
+    gemG.strokeTriangle(16, 2, 4, 14, 28, 14);
+    gemG.generateTexture('gem', 32, 32);
+    gemG.destroy();
+
     // District tile
     this.createDistrictTexture();
   }
